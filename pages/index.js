@@ -1,8 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 import Layout, { siteTitle } from "../components/layout";
 import Date from "../components/date";
-import Icon from "../components/icon";
 import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
 
@@ -26,27 +32,27 @@ export default function Home({ allPostsData }) {
         <ul className={`${utilStyles.list} ${utilStyles.flexCentered}`}>
           <li className={utilStyles.margin20px}>
             <a href="https://www.linkedin.com/in/hpieroni">
-              <Icon width={32} name="linkedin" />
+              <FaLinkedin color="black" size={36} />
             </a>
           </li>
           <li className={utilStyles.margin20px}>
             <a href="https://github.com/hpieroni">
-              <Icon width={32} name="github" />
+              <FaGithub color="black" size={36} />
             </a>
           </li>
           <li className={utilStyles.margin20px}>
             <a href="https://twitter.com/hgpieroni">
-              <Icon width={32} name="twitter" />
+              <FaTwitter color="black" size={36} />
             </a>
           </li>
           <li className={utilStyles.margin20px}>
             <a href="https://www.instagram.com/hernan.pieroni/">
-              <Icon width={32} name="instagram" />
+              <FaInstagram color="black" size={36} />
             </a>
           </li>
           <li className={utilStyles.margin20px}>
             <a href="mailto:hernan.pieroni@gmail.com">
-              <Icon width={32} name="gmail" />
+              <FaEnvelope color="black" size={36} />
             </a>
           </li>
         </ul>
